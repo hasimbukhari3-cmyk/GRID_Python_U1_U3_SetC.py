@@ -1,0 +1,17 @@
+word = "Automation"
+
+print(word[0], word[-1], len(word))
+
+print(word[:3], word[3:], word[::-1], word[::2])
+
+try:
+    word[0] = 'z'
+except TypeError:
+    print("TypeError")
+
+try:
+    print(word[30])
+except IndexError:
+    print("IndexError")
+
+print('z' + word[1:])
