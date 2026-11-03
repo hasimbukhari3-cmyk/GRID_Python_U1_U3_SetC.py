@@ -1,0 +1,8 @@
+print("code,Run,Repeat",sep="|",end="!\n")
+name,city,year = "karan","vadodara",2028
+print(f"Name:\t{name}\nCity:\t{city}")
+print(f'She said "It\'s {year}"')
+
+a,b = 100 , 250
+a,b = b,a
+print(a,b)
