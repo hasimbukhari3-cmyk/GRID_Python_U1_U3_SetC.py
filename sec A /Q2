@@ -1,0 +1,23 @@
+item_name=input("Enter item name :")
+price = float(input("Enter price :"))
+raw_qty = input("Enter a quantity:")
+
+print(type(raw_qty))
+quantity = int(raw_qty)
+print(type(quantity))
+
+total = price * quantity
+print(f"Total for {item_name}: {total:.2f}")
+
+
+try:
+    int("25.5")
+except ValueError:
+    print("ValueError")
+
+try:
+    "25" + 5
+except TypeError:
+    print("TypeError")
+
+print(int(float("25.5")), int(-9.9), -9.9 // 1)
