@@ -1,0 +1,43 @@
+items = ['red', 'green', 'blue', 'black']
+#Q1
+
+items.append("white")
+items.extend(['pink', 'grey'])
+items.insert(0, "gold")
+items.remove("blue")
+
+#Q2
+
+last = items.pop()
+items[0] = "cyan"
+
+#Q3
+
+print(items, last, len(items))
+
+#Q4
+
+list1 = ['1', '2']
+list1.append(['3', '4', '5'])
+print(list1, len(list1))
+
+list2 = ['1', '2']
+list2.extend(['3', '4', '5'])
+print(list2, len(list2))
+
+#Q5
+
+try:
+    items[50]
+except IndexError:
+    print("IndexError")
+
+try:
+    items.remove("purple")
+except ValueError:
+    print("ValueError")
+
+try:
+    [].pop()
+except IndexError:
+    print("IndexError")
