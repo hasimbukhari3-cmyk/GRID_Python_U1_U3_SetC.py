@@ -1,0 +1,13 @@
+vals = [100,9.75,'Coder',True,None]
+print([type(v).__name__ for v in vals])
+
+x = 'yes'
+print(type(x).__name__)
+
+print(0.1 + 0.2 == 0.3, round(0.1 + 0.2, 2))
+
+print(True and 1 and True or True)
+
+print([bool(v) for v in [-1, '', None, [], 'None', 0]])
+
+print(isinstance('1', (int, float)))
