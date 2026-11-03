@@ -1,0 +1,19 @@
+raw = " kIRan Joshi , Vadodara, kiran@lib.org "
+
+clean = raw.strip()
+parts = [p.strip() for p in clean.split(',')]
+print(parts)
+
+name, city, email = parts
+print(name.title(), city.upper(), email.lower(), sep=" | ")
+
+print(email.endswith(".org"), email.startswith("kiran"), email.find("@"), email.find("#"))
+
+try:
+    email.index("#")
+except ValueError:
+    print("ValueError")
+
+print(city.replace('a', '4'))
+
+print(raw.lstrip() == clean, raw.rstrip() == clean)
