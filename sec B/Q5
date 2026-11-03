@@ -1,0 +1,20 @@
+
+age = 70
+has_id = False
+has_guardian = False
+print(18 <= age <= 60)
+
+can_enter = (age >= 18 and has_id) or has_guardian
+print(can_enter)
+
+print("Hello" and "World", "" or "Guest", not 10)
+
+user = ""
+print(user or "Guest")
+
+score = 7
+score *= 6
+score -= 2
+score //= 3
+score += 1.5
+print(score)
