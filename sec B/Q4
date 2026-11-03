@@ -1,0 +1,18 @@
+a, b = 31, 7
+print(a // b, a % b, -a // b, -a % b)
+
+print((-a // b) * b + (-a % b) == -a)
+
+print(100 - 4 * 3 ** 2 // 5 + 1, 2 ** 2 ** 3, 9 // -4)
+
+print(type(10 / 2).__name__, type(10 // 2).__name__)
+
+price = 325
+quantity = 4
+tax_rate = 0.05
+
+subtotal = price * quantity
+tax = subtotal * tax_rate
+total = subtotal + tax
+
+print(f"Subtotal: {subtotal}  Tax: {tax:.2f}  Total: {total:.2f}")
